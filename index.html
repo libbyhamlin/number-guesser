@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Titillium+Web&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="main.css">
+    <title>Guess a number game</title>
+  </head>
 
-        <title>Guess a number game</title>
-    </head>
+  <body>
+    <h1>Can you guess the right number?</h1>
 
-    <body>
-        <h1>Can you guess the right number?</h1>
+    <section>
+      <p>
+        Guess a number between 1 throught 10.
+      </p>
+    </section>
 
-        <section>
-            <p>
-                Enter a number below and click guess.
-            </p>
-        </section>
+    <section class="input">
+      <input id="user-guess" type="number" />
+    </section>
 
-        <section>
-            <input id="user-guess" type="number">
-        </section>
-
-        <section>
-            <p><span id="game-result"></span>
-            </p>
-
-            <button id="submit-button">Submit Answer</button>
-        </section>
-
-        <section class="results">
-            <p>You have <span id="tries-left"></span> tries left.</p>
-
-        </section>
-
+    <p><span id="game-result"></span></p>
+    
+    <section class="btn">
+        <button id="submit-button">Submit Answer</button>
+    </section>
 
 
+    <section class="results">
+      <p>You have <span id="tries-left"></span> tries left.</p>
+    </section>
 
-
-        <script type="module" src="app.js"></script>
-    </body>
-
+    <script type="module" src="app.js"></script>
+  </body>
 </html>

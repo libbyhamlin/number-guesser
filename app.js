@@ -21,11 +21,11 @@ submitButton.addEventListener('click', () => {
 
     const result = compareNumber(guessedNumber, correctNumber);
     if (result === 1) {
-        return (gameResult.textContent = 'you lost');
+        return (gameResult.textContent = 'You guessed too high!');
     } else if (result === -1 && remainingTries > 0) {
-        return (gameResult.textContent = 'you lost');
+        return (gameResult.textContent = 'You guessed too low!');
     } else if (result === 0 && remainingTries > 0) {
-        return (gameResult.textContent = 'you win!!!');
+        return (gameResult.textContent = 'You guessed correct!');
     } else {
         submitButton.disabled = true;
     }
