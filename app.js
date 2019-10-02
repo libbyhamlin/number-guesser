@@ -22,18 +22,13 @@ submitButton.addEventListener('click', () => {
     const result = compareNumber(guessedNumber, correctNumber);
     if (result === 1) {
         return (gameResult.textContent = 'you lost');
-    }
-    if (result === -1) {
+    } else if (result === -1 && remainingTries > 0) {
         return (gameResult.textContent = 'you lost');
-    }
-
-    if (result === 0) {
+    } else if (result === 0 && remainingTries > 0) {
         return (gameResult.textContent = 'you win!!!');
+    } else {
+        submitButton.disabled = true;
     }
-
-  // // if (remainingTries === 0) {
-  // //     document.getElementById('remainingTries').disabled = true;
-  // }
 
     console.log(result);
 });
