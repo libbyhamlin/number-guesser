@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
 
         <title>Guess a number game</title>
     </head>
@@ -15,20 +15,23 @@
 
         <section>
             <p>
-                Write the rules here!
+                Enter a number below and click guess.
             </p>
         </section>
 
         <section>
-            <input id="user-guess" type="choose a number">
+            <input id="user-guess" type="number">
         </section>
 
         <section>
+            <p><span id="game-result"></span>
+            </p>
+
             <button id="submit-button">Submit Answer</button>
         </section>
 
         <section class="results">
-            <p></p>
+            <p>You have <span id="tries-left"></span> tries left.</p>
 
         </section>
 
@@ -36,7 +39,7 @@
 
 
 
-        <script src="app.js"></script>
+        <script type="module" src="app.js"></script>
     </body>
 
 </html>
